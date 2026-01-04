@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cefs2y1epw3am"]
+
+[ext_resource type="Script" uid="uid://ctndvk0gwiull" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="PackedScene" uid="uid://c34enxs7ymuxj" path="res://scenes/gun.tscn" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://1hkqok67v0d" path="res://scenes/player.png" id="3_qhqgy"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dqkch"]
+radius = 12.0
+height = 34.0
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_3vyb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_dqkch")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_qhqgy")
+
+[node name="GunPivot" type="Node2D" parent="."]
+
+[node name="Gun" parent="GunPivot" instance=ExtResource("2_g2els")]
+position = Vector2(29, 4)

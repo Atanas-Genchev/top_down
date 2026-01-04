@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca40en2vfwa6t"]
+
+[ext_resource type="PackedScene" uid="uid://ddk68pd1lousg" path="res://interactable.tscn" id="1_dk5gl"]
+[ext_resource type="Texture2D" uid="uid://b8svgff6w5aru" path="res://revolver.png" id="2_kw0bs"]
+
+[node name="gun" instance=ExtResource("1_dk5gl")]
+script = null
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(-1.0000005, 0)
+scale = Vector2(1.3125, 1)
+texture = ExtResource("2_kw0bs")
+
+[node name="Label" parent="." index="2"]
+text = "[e]equip
+"

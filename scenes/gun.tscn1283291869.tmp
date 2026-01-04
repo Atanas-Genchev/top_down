@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c34enxs7ymuxj"]
+
+[ext_resource type="Script" uid="uid://rb32s5408eat" path="res://scenes/gun.gd" id="1_og67c"]
+[ext_resource type="Texture2D" uid="uid://b8svgff6w5aru" path="res://revolver.png" id="1_x77fm"]
+
+[node name="Gun" type="Node2D"]
+script = ExtResource("1_og67c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(10, -4)
+texture = ExtResource("1_x77fm")
