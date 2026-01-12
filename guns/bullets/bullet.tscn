@@ -1,9 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://cgiwjxpuksgxr"]
 
-[ext_resource type="Script" uid="uid://bpxwftxsxd446" path="res://scenes/bullet.gd" id="1_y25gk"]
-[ext_resource type="Texture2D" uid="uid://dx2eyq1sut22e" path="res://bullet.png" id="2_l5glv"]
+[ext_resource type="Script" uid="uid://bpxwftxsxd446" path="res://guns/bullets/bullet.gd" id="1_y25gk"]
+[ext_resource type="Texture2D" uid="uid://dx2eyq1sut22e" path="res://guns/bullets/bullet.png" id="2_l5glv"]
 
 [node name="Bullet" type="Node2D"]
+physics_interpolation_mode = 2
 script = ExtResource("1_y25gk")
 speed = 1000
 

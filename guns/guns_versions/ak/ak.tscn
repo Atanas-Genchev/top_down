@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dd6res6vdq4ch"]
+
+[ext_resource type="PackedScene" uid="uid://c34enxs7ymuxj" path="res://guns/gun.tscn" id="1_s683p"]
+[ext_resource type="Texture2D" uid="uid://crumv0idm84uq" path="res://guns/guns_versions/ak/ak.png" id="2_kn3hw"]
+[ext_resource type="AudioStream" uid="uid://d4fv4fmhcq6ww" path="res://guns/guns_versions/ak/ak.wav" id="3_kn3hw"]
+
+[node name="Ak" instance=ExtResource("1_s683p")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(32, 2)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_kn3hw")
+
+[node name="BulletSpawn" parent="." index="1"]
+position = Vector2(51, 0)
+
+[node name="Firerate" parent="." index="2"]
+wait_time = 0.1
+
+[node name="AudioStreamPlayer2D" parent="." index="3"]
+position = Vector2(22, 6)
+stream = ExtResource("3_kn3hw")

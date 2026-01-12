@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg8on6bo8e6jh"]
+
+[ext_resource type="PackedScene" uid="uid://c34enxs7ymuxj" path="res://guns/gun.tscn" id="1_rlopr"]
+[ext_resource type="Texture2D" uid="uid://b8svgff6w5aru" path="res://guns/guns_versions/revolver/revolver.png" id="2_844u3"]
+[ext_resource type="AudioStream" uid="uid://chxatqbu2h0g5" path="res://guns/guns_versions/revolver/revolver.wav" id="3_844u3"]
+
+[node name="Revolver" instance=ExtResource("1_rlopr")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(42, -4)
+texture = ExtResource("2_844u3")
+
+[node name="BulletSpawn" parent="." index="1"]
+position = Vector2(60, -8)
+
+[node name="AudioStreamPlayer2D" parent="." index="3"]
+position = Vector2(32, 0)
+stream = ExtResource("3_844u3")

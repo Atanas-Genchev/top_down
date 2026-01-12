@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://chxatqbu2h0g5"
-path="res://.godot/imported/revolver.wav-168c842632a66e4d7af5008105004f64.sample"
+uid="uid://d4fv4fmhcq6ww"
+path="res://.godot/imported/ak.wav-20072435e940be9d1f0bd5327cf4f9fe.sample"
 
 [deps]
 
-source_file="res://revolver.wav"
-dest_files=["res://.godot/imported/revolver.wav-168c842632a66e4d7af5008105004f64.sample"]
+source_file="res://guns/guns_versions/ak/ak.wav"
+dest_files=["res://.godot/imported/ak.wav-20072435e940be9d1f0bd5327cf4f9fe.sample"]
 
 [params]
 
